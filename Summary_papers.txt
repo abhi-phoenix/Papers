@@ -1,0 +1,9 @@
+1. Comparative study between charismatic and non-charismatic speech
+Collected data from Amazon Turk for charismatic and non-charismatic speeches. 
+Used U-nets on the spectrograms of the data for denoising the audios. 
+Extracted pauses from text using RMSE of energy in the signal, and used BERT to predict emphasized words in the audio. Applied Statistical Testing on the prosodic elements like volume, pitch etc on the emphasized words in the audios, and found a significant difference between the two.
+
+2. Synthesis of Audio and Gestures. 
+Synthesized audio by manipulating the pitch, volume etc along the emphasized words and phonemes to manipulate the audio into a charismatic voice, and introduced pauses from the predictions of a few supervised models. 
+Used Transfer Learning on TacoTron 2 with the data collected to synthesize the charismatic audio. 
+Applied Unsupervised learning algorithms to gather charismatic gestures identified from openpose and labeled these gestures(Hands and Facial gestures) based on the one-to-one mapping with the feature vectors of words in a sentence. (Multi Label Classification with labels as gestures). Used BERT to predict these gestures to be utilized for the virtual person with the synthesized speech.
